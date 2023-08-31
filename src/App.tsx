@@ -1,13 +1,23 @@
-import React from 'react';
-import Header from './components/headers/Header';
+import React from "react";
+import Header from "./components/headers/Header";
 
-import "./App.scss"
-
+import "./App.scss";
+import Navigator from "./components/nav/Navigator";
+import { Route, Routes } from "react-router";
+import Section from "./components/Section/Section";
 
 function App() {
   return (
     <>
-      <Header/>
+      <div className="background">
+        <div className="contents">
+          <Header />
+          <Navigator />
+          <Routes>
+            <Route element={<Section />} path={"/"} />
+          </Routes>
+        </div>
+      </div>
     </>
   );
 }
