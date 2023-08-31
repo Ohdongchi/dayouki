@@ -1,5 +1,6 @@
-.header {
+.header-container {
   width:100%;
+  background-color: #fff;
 }
 .header-box {
   display: block;
@@ -20,6 +21,7 @@
       width:4em;
       height:58px;
       line-height: 58px;
+      float:left;
     }
   
     h2 {

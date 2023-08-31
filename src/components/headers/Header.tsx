@@ -8,7 +8,7 @@ import "./style/header.scss";
 const Header = () => {
     
     return (
-        <header className="header">
+        <header className="header-container">
             <div className="header-box">
                 <div>
                     <img src={PageIcon} alt="page-icon" className="header-icon" />
