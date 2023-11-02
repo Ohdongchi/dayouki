@@ -3,8 +3,10 @@ import Header from "./components/headers/Header";
 
 import "./App.scss";
 import Navigator from "./components/nav/Navigator";
+
 import { Route, Routes } from "react-router";
-import Section from "./components/Section/Section";
+
+import Section from "./components/main/Section";
 
 function App() {
   return (

@@ -1,0 +1,69 @@
+$card-in-padding-size: 12px 16px;
+
+.card-container {
+  width: 100%;
+  height: 75vh;
+  margin-top: 8px;
+  overflow-y: scroll;
+  // border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .card-box {
+    width: 100%;
+    min-height: 37vh;
+    max-height: 58vh;
+    margin-top: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    & > * {
+      padding: $card-in-padding-size;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      .card-profile {
+        width: 20em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+      }
+    }
+    .card-contents {
+      .card-text {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-word;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 3; // 원하는 라인수
+        -webkit-box-orient: vertical;
+      }
+
+      .card-images {
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        justify-content: space-around;
+        padding: 5px 0;
+        margin-top: 11px;
+        span {
+          width: 100%;
+          height: 100%;
+          margin: 3px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .card-box:first-child {
+    margin: 0;
+  }
+}
