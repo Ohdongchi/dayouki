@@ -7,6 +7,7 @@ import Navigator from "./components/nav/Navigator";
 import { Route, Routes } from "react-router";
 
 import Section from "./components/main/Section";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route element={<Section />} path={"/"} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </>
