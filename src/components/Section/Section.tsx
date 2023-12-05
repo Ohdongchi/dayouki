@@ -1,12 +1,13 @@
-import React from "react";
 import Card from "../card/Card";
-import Footer from "../footer/Footer";
+import "./style/Section.scss";
 
 const Section = () => {
   return (
-    <div>
+    <div className="section">
       <Card />
-      // modal
+      {/* <Modal>
+        <PostDetail />
+      </Modal> */}
     </div>
   );
 };
