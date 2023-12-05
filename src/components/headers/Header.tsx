@@ -1,7 +1,5 @@
-import Recat from "react";
-
 import PageIcon from "../../static/flower.png";
-import UserIcon from "../../static/user.png"
+import UserIcon from "../../static/user.png";
 
 import "./style/header.scss";
 
