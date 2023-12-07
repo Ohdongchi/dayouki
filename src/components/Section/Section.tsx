@@ -1,15 +1,7 @@
-import Card from "../card/Card";
 import "./style/Section.scss";
 
-const Section = () => {
-  return (
-    <div className="section">
-      <Card />
-      {/* <Modal>
-        <PostDetail />
-      </Modal> */}
-    </div>
-  );
+const Section = ({ children }: { children: any }) => {
+  return <section className="section">{children}</section>;
 };
 
 export default Section;

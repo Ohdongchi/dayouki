@@ -1,0 +1,40 @@
+.testBox {
+  width: 640px;
+  height: 100%;
+  background-color: rgb(160, 52, 52) d4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(243, 243, 243);
+  .testHeader {
+    width: 100%;
+    height: 58px;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+  }
+  .testMain {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(197, 71, 71);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    // overscroll-behavior-y: contain;
+    .testItem1 {
+      display: block;
+      width: 100%;
+      height: 300px;
+      background-color: rgb(65, 65, 65);
+    }
+  }
+  .testFooter {
+    width: 100%;
+    height: 58px;
+    background-color: rgb(136, 255, 0);
+    position: sticky;
+    bottom: 0;
+  }
+}

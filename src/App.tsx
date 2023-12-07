@@ -7,6 +7,9 @@ import { Route, Routes } from "react-router";
 
 import Footer from "./components/footer/Footer";
 import Section from "./components/section/Section";
+import Profile from "./components/profile/Profile";
+import Main from "./components/main/Main";
+import Test from "./components/test/Test";
 
 function App() {
   return (
@@ -14,10 +17,12 @@ function App() {
       <div className="background"></div>
       <div className="contents">
         <Header />
-        <Navigator />
-        <Routes>
-          <Route element={<Section />} path={"/"} />
-        </Routes>
+        <Section>
+          <Routes>
+            <Route element={<Main />} path={"/"} />
+            <Route element={<Profile />} path={"/profile"} />
+          </Routes>
+        </Section>
         <Footer />
       </div>
     </>

@@ -1,6 +1,8 @@
+$header-height-size: 58px;
+
 .header-container {
   width: 100%;
-  height: 58px;
+  height: $header-height-size;
   line-height: 58px;
   position: sticky;
   top: 0;
